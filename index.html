@@ -1,0 +1,1950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WildTrack</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #b3b3b3;
+}
+
+
+/*first page*/
+
+
+/*homepage*/
+
+
+/*logo*/
+
+.main{
+    width: 100%;
+    background:url(https://i.pinimg.com/originals/5c/5b/3e/5c5b3e59b4079051e35e4053250a5e39.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    filter: contrast(1.1);
+}
+
+/*navbar*/
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: #5edd9e;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+}
+
+.pic2{
+  height: auto;
+  width:  302px;
+  border-radius: 500px;
+  height: 100px;
+  width: 100px;
+}
+
+/*tabs*/
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color: #5edd9e;
+}
+
+/*search*/
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #5edd9e;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #5edd9e;
+    border: 2px solid #5edd9e;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+
+/*content of homepage*/
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+/*join us button*/
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #5edd9e;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+.cn:hover{
+    background-color: #fff;
+}
+.content span{
+    color: #5edd9e;
+    font-size: 65px
+}
+
+/*login*/
+
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    padding: 25px;
+}
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #5edd9e;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #5edd9e;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+.form input:focus{
+    outline: none;
+}
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #5edd9e;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: #5edd9e;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #5edd9e;
+}
+
+
+/*second page*/
+
+
+/*about us*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+ 
+  font-family: 'Poppins', sans-serif;
+}
+
+/*about us container*/
+
+.about-us{
+  height: 100vh;
+  width: 100%;
+  padding: 90px 0;
+  background: #b3b3b3;
+}
+
+/*logo pic*/
+
+.pic{
+  height: auto;
+  width:  302px;
+  border-radius: 500px;
+}
+
+/*about container*/
+
+.about{
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*about us text/content*/
+
+.text{
+  width: 540px;
+}
+.text h2{
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+}
+.text h5{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.text p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+/*button container*/
+
+.data{
+  margin-top: 30px;
+}
+
+/*read button*/
+
+.read{
+  font-size: 18px;
+  background: #1d7549;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.read:hover{
+  background: #175f3b;
+  border: 1px solid #175f3b;
+}
+
+
+/*third page*/
+
+
+/*our projects*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/*section container*/
+
+section {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: #b3b3b3;
+}
+
+/*section heading container*/
+
+.section-heading{
+    text-align: center; 
+    font-size: 60px;
+    color: #000000;
+    background-color: #b3b3b3;    
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+/*row/column*/
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.column {
+  width: 100%;
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+
+/*card container*/
+
+.card {
+  width: 400px;
+  height: 400px;
+  padding: 2em 1.5em;
+  background: linear-gradient(#cacaca 50%, #249c60 50%);
+  background-size: 100% 200%;
+  background-position: 0 2.5%;
+  border-radius: 5px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/*heading inside container*/
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f194c;
+  margin: 1em 0;
+}
+
+/*transition-1*/
+
+.icon-wrapper1{
+    background-image: url(https://www.wwf.org.uk/sites/default/files/styles/hero_s/public/2019-11/Small_WW272250.jpg?h=a11e816f&itok=uMyDMpud);
+  background-size: cover;
+  position: relative;
+  margin: auto;
+  font-size: 30px;
+  height: 2.5em;
+  width: 2.5em;
+  color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+}
+
+/*transition-2*/
+
+.icon-wrapper2{
+    background-image: url(https://miro.medium.com/v2/resize:fit:640/1*PT8H-8Kv6mkeA-eafGdhag.jpeg);
+    background-size: cover;
+    position: relative;
+  margin: auto;
+  font-size: 30px;
+  height: 2.5em;
+  width: 2.5em;
+  color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+}
+
+/*transition-3*/
+
+.icon-wrapper3{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/26/Sumatra-tiger_Panthera-tigris-sumatrae.jpg);
+    background-size: cover;
+    position: relative;
+  margin: auto;
+  font-size: 30px;
+  height: 2.5em;
+  width: 2.5em;
+  color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+}
+
+/*transition-4*/
+
+.icon-wrapper4{
+    background-image: url(https://i.natgeofe.com/n/2d706180-e778-4110-9c15-1a7435b72114/mountain-gorillas-rwanda-02_3x4.jpg);
+    background-size: cover;
+    position: relative;
+  margin: auto;
+  font-size: 30px;
+  height: 2.5em;
+  width: 2.5em;
+  color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+}
+
+/*transition-5*/
+
+.icon-wrapper5{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Azy_%28orangutan%29_at_the_Indianapolis_Zoo.jpg/800px-Azy_%28orangutan%29_at_the_Indianapolis_Zoo.jpg);
+    background-size: cover;
+    position: relative;
+  margin: auto;
+  font-size: 30px;
+  height: 2.5em;
+  width: 2.5em;
+  color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+}
+
+/*transition-6*/
+
+.icon-wrapper6{
+    background-image: url(https://www.pressenza.com/wp-content/uploads/2021/12/Yangtze_finless_porpoise_12_February_2008a.jpg);
+    background-size: cover;
+    position: relative;
+  margin: auto;
+  font-size: 30px;
+  height: 2.5em;
+  width: 2.5em;
+  color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+}
+
+/*card container hover*/
+
+.card:hover {
+  background-position: 0 100%;
+}
+
+/*card container transition*/
+
+.card:hover .icon-wrapper {
+  background-color: #ffffff;
+  color: #249c60;
+}
+
+/*heading inside card container transition*/
+
+.card:hover h3 {
+  color: #ffffff;
+}
+
+/*para container transition*/
+
+.p2{
+  color: rgba(30, 94, 67, 0.788);
+}
+
+/*para container transition*/ 
+
+.card:hover .p2 {
+  color: #f0f0f0;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    padding: 0 2em;
+  }
+  .column {
+    flex: 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em 3em;
+  }
+  .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+
+
+/*fourth page*/
+
+
+/*AI tech*/
+
+
+/*drone detection*/
+
+/* AI tech container*/
+.about0 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #113a3a;
+      color: #757575;
+      font-family: Arial, sans-serif;
+      height: 400px;
+    }
+
+/*images container*/
+
+    .imm {
+      border: 2px solid #95b8b836;
+      padding: 20px;
+      background-color: #ffffff1c;
+      border-radius: 8px;
+      transition: 0.5s;
+      height: 400px;
+    }
+
+/*image container hover*/
+  
+    .imm:hover {
+      transform: scale(1.1);
+    }
+
+/*drone detection img container */
+
+    #detections {
+      margin-top: 70px;
+    }
+
+    .detection {
+      color: #3f3f3fd8;
+      font-weight: bold;
+      margin-left: 120px;
+      margin-top: 10px;
+      transition: color 0.5s;
+    }
+
+/*buttons*/
+
+    #imageButtons {
+      display: flex;
+      justify-content: space-around;
+     height: 50px;
+      background-color: #b4b4b4;
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+
+/*button and button hover transition*/
+
+    .button53 {
+      padding: 10px 20px;
+      background-color: #838383;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.5s;
+      width: 100px;
+    }
+
+    .button53:hover {
+      background-color: #1b1b1bbb;
+    }
+
+/*drone0 content*/ 
+
+.drone0{
+    width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*heat1 content*/
+
+#signature{
+  color: #3f3f3fd8;
+      font-weight: bold;
+      margin-left: 10px;
+      margin-top: 60px;
+      transition: color 0.5s;
+}
+
+
+.heat1{
+    width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*acoustic0 content*/
+
+.acoustic0{
+    width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*fifth page*/
+
+/*get involved*/
+
+/*get involved container*/
+
+.involved{
+  height: 100vh;
+  width: 100%;
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+/*get involved image*/
+
+.pic{
+  height: auto;
+  width:  302px;
+  border-radius: 500px;
+}
+
+/*container*/
+
+.involve{
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*buttons*/
+
+.button54 {
+      padding: 10px 20px;
+      background-color: #7a7a7a;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.5s;
+      width: 300px;
+      margin-top: 40px;
+    }
+
+/*button hover*/
+
+    .button54:hover {
+      background-color: #464646d5;
+    }
+
+/*fourth page*/
+
+/*contact us*/
+.container{
+  width: 85%;
+  background: #35b68f;
+  border-radius: 6px;
+  padding: 20px 20px 20px 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-left: 50px;
+  margin-top: 100px;
+}
+
+.container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+.container .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+.content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #3e2093;
+}
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 110px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+  background: #5029bc;
+}
+
+@media (max-width: 950px) {
+  .container{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .container .content .right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+  .container{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .container .content{
+    flex-direction: column-reverse;
+  }
+ .container .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .container .content .left-side::before{
+   display: none;
+ }
+ .container .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+}
+
+
+/*fifth page*/
+
+/*upcoming projects*/
+
+/*box1*/
+
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column1 {
+  width: 100px;
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+
+/*heading*/
+
+.section-heading1{
+    text-align: center; 
+    font-size: 60px;
+    color: #000000;
+    background-color: #b3b3b3;    
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+/*card container*/
+
+.card1 {
+  width: 350px;
+  height: 320px;
+  padding: 2em 1.5em;
+  background: linear-gradient(#ffffff 50%, #249c60 50%);
+  background-size: 100% 200%;
+  background-position: 0 2.5%;
+  border-radius: 5px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/*heading inside card conatiner*/
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #125a41;
+  margin: 1em 0;
+}
+
+/*trasition 1 (7)*/
+
+.icon-wrapper7 {
+  background-image: url(https://i.pinimg.com/736x/77/c2/0e/77c20e165d7718a165ca15f17976c9cb.jpg);
+  background-size: cover;
+  position: relative;
+  margin: auto;
+  font-size: 30px;
+  height: 2.5em;
+  width: 2.5em;
+  color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+}
+
+/*trasition 1 (8)*/
+
+.icon-wrapper8 {
+  background-image: url(https://images.adsttc.com/media/images/61d7/54d7/336e/2873/4574/5463/newsletter/cookfox-apiary-secondary-image.jpg?1641501917);
+  background-size: cover;
+  position: relative;
+  margin: auto;
+  font-size: 30px;
+  height: 2.5em;
+  width: 2.5em;
+  color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+}
+
+/*trasition 1 (9)*/
+
+.icon-wrapper9 {
+  background-image: url(https://files.worldwildlife.org/wwfcmsprod/images/African_Elephant_Kenya_112367/hero_small/3v49raxlb8_WW187785.jpg);
+  background-size: cover;
+  position: relative;
+  margin: auto;
+  font-size: 30px;
+  height: 2.5em;
+  width: 2.5em;
+  color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+}
+
+/*card container*/
+
+.card1:hover {
+  background-position: 0 100%;
+}
+.card1:hover .icon-wrapper {
+  background-color: #ffffff;
+  color: #249c60;
+}
+.card1:hover h3 {
+  color: #ffffff;
+}
+
+/* card para*/
+
+.p0{
+    color: #35855e;
+    font-size: 40px;
+}
+
+.card1:hover .p0 {
+  color: #f0f0f0;
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding: 0 2em;
+  }
+  .column1 {
+    flex: 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em 3em;
+  }
+  .column1 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+
+/*sixth page*/
+
+/*contact us*/
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #317452;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #1a5538;
+}
+
+.container27 {
+  border-radius: 5px;
+  background-color: #b3b3b381;
+  padding: 10px;
+  margin-top: 200px;
+}
+
+.column27 {
+  float: left;
+  width: 50%;
+  margin-top: 70px;
+  padding: 20px;
+}
+
+.row27:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column27, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*seventh page*/
+
+/*FAQs*/
+
+.faq-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-left: 40px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.question {
+  color: #292929;
+  font-size: 20px;
+}
+
+.answer {
+  color: #ffffff;
+  background-color: #7474742c;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+  .faq-section {
+    padding: 10px;
+  }
+
+  .faq-item {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .faq-section {
+    margin: 0;
+  }
+}
+
+/*eighth page*/
+
+/*footer*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  background-color: rgba(126, 125, 125, 0.651);
+  color: #fefefe;
+  bottom: 0;
+  left: 0;
+  margin-left: -24px;
+  width: 1300px;
+  
+}
+
+.footer .heading {
+  color: #fefefe;
+  max-width: 1010px;
+  width: 90%;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.footer .content {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5rem;
+}
+
+.footer .content p {
+  margin-bottom: 1.3rem;
+}
+
+.footer .content a {
+  text-decoration: none;
+  color: #fefefe;
+}
+
+.footer .content a:hover {
+  border-top: 2px solid #3a755f;
+
+  border-bottom: 2px solid #3a755f;
+}
+
+.footer .content h4 {
+  margin-bottom: 1.3rem;
+  font-size: 19px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+footer hr {
+  margin: 2rem 0;
+}
+
+@media (max-width: 767px) {
+  .footer .content {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .footer {
+    position: unset;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer .content,
+  .footer {
+    font-size: 14px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .footer {
+    position: unset;
+  }
+}
+
+</style>
+</head>
+<body>
+
+
+  <!--first page-->
+<!--home page-->
+
+<!--navbar-->
+
+<!--logo-->
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo"><img src="https://centaur-wp.s3.eu-central-1.amazonaws.com/designweek/prod/content/uploads/2019/01/11161722/dicaprio-leaf-logo-1200-002.jpg" class="pic2"></h2>
+            </div>
+<!--tabs-->
+            <div class="menu">
+                <ul>
+                    <li><a href="test1.html">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#tech">Technology</a></li>
+                    <li><a href="create.html">Involve</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+<!--search bar-->
+            
+<!--content of the homepage-->
+        </div> 
+        <div class="content">
+            <h1><br><span>WildTrack</span></h1>
+            <p class="par">Unveiling Nature's Splendor, Inspiring Conservation <br> Join us on a digital journey to preserve the beauty <br>of our wild world</p>
+<!--join us button-->
+                
+<button class="cn"><a href="">JOIN US</a></button>
+
+<!--login form-->
+                <div class="form">
+                    <h2 style="background-color: #000;">Login Here</h2>
+                    <input type="email" name="email" placeholder="Enter Email Here" required>
+                    <input type="password" name="" placeholder="Enter Password Here" required>
+                    <button class="btnn"><a href="">Login</a></button>
+
+                    <p class="link">Don't have an account<br>
+                    <a href="#">Sign up </a> here</a></p>
+
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!--end of first page-->
+
+<!--second page-->
+
+<!--About us-->
+
+<!--about us container-->
+
+<section class="about-us" id="about">
+  <!--about container--> 
+  <div class="about">
+
+<!--logo-->
+
+      <img src="https://centaur-wp.s3.eu-central-1.amazonaws.com/designweek/prod/content/uploads/2019/01/11161722/dicaprio-leaf-logo-1200-002.jpg" class="pic">
+      
+<!--text-->      
+      
+      <div class="text">
+
+        <h2>About Us</h2>
+        <h5>Biologist & <span style="color: #249c60;">Bioacoustics Researcher</span> </h5>
+          <p>Welcome to Celestial Wildlife, where we merge science and technology to pioneer conservation efforts. Our groundbreaking Drone Wildlife Habitat Detection, Acoustic Sensors for Wildlife Monitoring, and Heat Signature Detection in Thermal Imagery redefine wildlife study.  our mission to safeguard biodiversity, utilizing scientific precision and cutting-edge technology to ensure a sustainable and thriving future for our planet's invaluable ecosystems and the incredible species that call them home.</p>
+
+<!--about us button container-->
+
+          <div class="data">
+
+<!--read button-->
+
+        <a href="#" class="read">Read more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--end of second page-->
+
+<!--third page-->
+
+<!--our projects-->
+
+
+<h2 class="section-heading" id="project">Our Project</h2>
+
+    <section>
+
+
+      <!--box-1-->
+
+
+      <div class="row">
+        <div class="column">
+
+<!--card container-->
+
+          <div class="card">
+<!--transition-->
+            <div class="icon-wrapper1">
+              
+              <i class="fas fa-hammer"></i>
+            
+            </div>
+<!--heading-->           
+            <h3>Amur Leopard</h3>
+            
+            <!-- para container-->
+            
+            <p class="p2" style="
+            font-size: 15px;
+            line-height: 1.6;
+            letter-spacing: 0.03em;">
+              Championing the Amur Leopard's conservation, we employ cutting-edge tools like Drone Wildlife Habitat Detection and Acoustic Sensors. Our initiatives encompass habitat restoration, anti-poaching measures, and community involvement, ensuring a sustainable future for this endangered species.</p> <br>
+              
+              <!--read more container-->
+              
+              <a href="#" class="read">Read more</a>
+        </div>
+        </div>
+
+
+        <!--box-2-->
+
+
+        <div class="column">
+
+<!--card container-->
+
+          <div class="card">
+<!--transition-->
+            <div class="icon-wrapper2">
+              
+              <i class="fas fa-brush"></i>
+            
+            </div>
+<!--heading-->            
+            <h3>Javan Rhino</h3>
+           
+           <!--para container-->
+           
+           <p class="p2" style="
+            font-size: 15px;
+            line-height: 1.6;
+            letter-spacing: 0.03em;">
+              Committed to Javan Rhino conservation, we employ habitat restoration, anti-poaching, and community collaboration <br>for a flourishing future. Our efforts aim to secure the survival of this critically endangered<br> species for generations.<br><br>
+              
+              <!--raed more container-->
+
+              <a href="#" class="read">Read more</a></p>
+          </div>
+            </div>
+        
+        
+        <!--box-3-->
+            
+        
+        <div class="column">
+          
+    <!--card container-->
+
+            <div class="card">
+            
+    <!--transition-->
+            
+              <div class="icon-wrapper3">
+              
+                <i class="fas fa-wrench"></i>
+            
+              </div>
+  <!--heading-->
+            <h3>Sunda Island Tiger</h3>
+            
+  <!--para container-->
+            
+            <p class="p2" style="
+            font-size: 15px;
+            line-height: 1.6;
+            letter-spacing: 0.03em;">Sunda Island Tigers are critically endangered due to habitat loss and poaching. Our conservation focuses on habitat revitalization, anti-poaching measures, and community collaborations, ensuring a future where these majestic creatures thrive in the wild.
+              <br><br>
+              
+        <!--read more container-->  
+            
+              <a href="#" class="read">Read more</a></p>
+          </div>
+        </div>
+        
+        
+        <!--box-4-->
+        
+        
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper4">
+              <i class="fas fa-truck-pickup"></i>
+            </div>
+            <h3>Mountain Gorillas</h3>
+            <p class="p2" style="
+            font-size: 15px;
+            line-height: 1.6;
+            letter-spacing: 0.03em;">In our dedication to Mountain Gorilla conservation, we combat habitat threats and poaching through anti-poaching measures and community involvement. Our mission is to secure a prosperous future for these majestic beings, promoting a harmonious coexistence with humanity.
+             <br><a href="#" class="read">Read more</a></p>
+          </div>
+        </div>
+        
+        
+        <!--box-5-->
+        
+        
+        <div class="column">
+          
+<!--card container-->
+          
+          <div class="card">
+            
+<!--transition-->
+            
+            <div class="icon-wrapper5">
+              
+              <i class="fas fa-broom"></i>
+            
+            </div>
+<!--heading-->
+            <h3>Tapanuli Orangutans</h3>
+           
+<!--para container-->
+           
+           <p class="p2" style="
+            font-size: 15px;
+            line-height: 1.6;
+            letter-spacing: 0.03em;">Dedicated to the preservation of Tapanuli Orangutans, we tackle habitat complexities and combat poaching through strategic anti-poaching initiatives and collaborative community efforts. Our goal is to safeguard the future of these distinctive primates, fostering a harmonious coexistence with the human communities.
+            <br>
+            
+<!--read more container-->
+            
+            <a href="#" class="read">Read more</a></p>
+          </div>
+        </div>
+        
+        
+        <!--box-6-->
+        
+        
+        <div class="column">
+
+<!--card container-->
+
+          <div class="card">
+            
+<!--transition-->
+            
+            <div class="icon-wrapper6">
+              
+              <i class="fas fa-plug"></i>
+            
+            </div>
+<!--heading-->
+            <h3>Yangtze Finless Porpoise</h3>
+           
+<!--para container-->
+           
+           <p class="p2" style="
+            font-size: 15px;
+            line-height: 1.6;
+            letter-spacing: 0.03em;">In our commitment to Yangtze Finless Porpoise conservation, we address habitat challenges and combat threats through strategic anti-exploitation measures and community engagement. Our aim is to secure a sustainable future for these unique aquatic mammals, promoting a harmonious coexistence with the local environment.<br>
+            
+<!--read more container-->
+            
+            <a href="#" class="read">Read more</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+   <!--ending of third page-->
+
+   <!--fourth page-->
+
+<!--AI based technology--> 
+
+  <!--heading -->
+  
+  <h2 style="background-color: #94949400; text-align: center; margin-top: 450px;font-size: 52px; color: #000;" id="tech"> 
+    Monitor <span style="color: #378d62">&</span> Track Wildlife <br>Population With <span style="color: #378d62">AI Algorithms</span> </h2>
+  
+  <!--drone detection--> 
+
+<!--drone container-->
+
+    <div class="drone0" style="margin-top: 70px;">
+
+<!--img container-->
+        
+<div id="imageContainer" class="b1"></div>
+
+<!--img(imm)-->
+
+        <img src="https://www.mdpi.com/animals/animals-12-01483/article_deploy/html/images/animals-12-01483-g005-550.jpg" alt="Drone Image" width="700" height="350px" class="imm">
+      
+<!--text container-->
+
+        <div class="text">
+
+<!--drone heading-->
+
+        <h2 style="font-size: 50px; margin-left: 60px;">Drone Wildlife Habitat Detection</h2>
+<!--drone content-->
+        <div id="detections">
+            <p class="detection">Detected Animal: Elephant</p>
+            <p class="detection">Detected Animal: Giraffe</p>
+            <p class="detection">Detected Animal: Lion</p>
+            <p class="detection">Detected Animal: Zebra</p>
+          </div>
+<!--drone buttons-->
+          <div id="imageButtons">
+            <button class="button53">Modification</button>
+            <button class="button53">Tracking</button>
+          </div>   
+      </div>
+    </div>
+</section>
+
+<!--heat detection-->
+
+<!--heat signature detection container-->
+
+<div class="heat1" style="margin-top: 200px;">
+    
+<!--img container(imm)-->
+  
+  <div id="imageContainer" class="b1"></div>
+
+  <img src="https://www.mdpi.com/sensors/sensors-14-13778/article_deploy/html/images/sensors-14-13778f9.png" alt="Drone Image" width="700" height="350px" class="imm">
+ 
+<!--text container-->
+
+  <div class="text">
+
+<!--container heading-->
+
+    <h2 style="font-size: 50px; margin-left: 60px;">Heat Signature Detection in Thermal Imagery
+    </h2>
+
+<!--container content-->
+
+    <div id="signature">
+        <p class="detection">Location: Wildlife Habitat X</p>
+        <p class="detection">Temperature Rise: 2.5°C</p>
+        <p class="detection">Date: March 2, 2024</p>
+      </div>
+
+<!--buttons-->
+
+      <div id="imageButtons">
+        <button class="button53">Analysis</button>
+        <button class="button53">Alerts</button>
+      </div>   
+  </div>
+</div>
+</section>
+
+<!--Acoustic sensors -->
+
+<!--Acoustic sensors container-->
+
+<div class="acoustic0" style="margin-top: 200px;">
+
+<!--img container(imm)-->
+
+    <div id="imageContainer" class="b1"></div>
+  <img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-019-41455-z/MediaObjects/41598_2019_41455_Fig1_HTML.png" alt="Drone Image" width="700" height="350px" class="imm">
+  <div class="text">
+
+<!--Acoustic sensors heading-->
+
+    <h2 style="font-size: 50px; margin-left: 60px;">Acoustic Sensors for Wildlife Monitoring
+    </h2>
+
+<!--Acoustic sensors content-->
+
+    <div id="dedication">
+        <p class="detection">Location: Wildlife Habitat Y</p>
+        <p class="detection">Detected Sounds: Birdsong, Rustling Leaves</p>
+        <p class="detection">Time: 14:30 - 15:00</p>
+      </div>
+
+<!--Acoustic sensors buttons-->
+
+      <div id="imageButtons">
+        <button class="button53">Analysis</button>
+        <button class="button53">Reports</button>
+      </div>   
+  </div>
+</div>
+</section>
+
+<!--end of fourth page-->
+
+<!--fifth page-->
+
+<!--Get Involved-->
+
+<!--get involved container-->
+
+<section class="involved" id="involve" style="background-color: #b3b3b3;">
+
+<!--involve content container-->
+  <div class="involve">
+
+<!--text container-->
+
+      <div class="text">
+<!--heading of content-->
+        <h2>Get Involved</h2>
+<!--para of content-->
+        <p>Engage and make a difference! Join our conservatio n efforts to protect endangered species. Your involvement ensures a brighter, sustainable future for wildlife. Together, let's inspire change and preserve the beauty of our planet. Get involved today!</p>
+        
+        <div class="data">
+        
+<!-- get involved button-->
+          <button class="button54">Get Involved</button>
+        </div>
+      </div>
+      <img src="https://centaur-wp.s3.eu-central-1.amazonaws.com/designweek/prod/content/uploads/2019/01/11161722/dicaprio-leaf-logo-1200-002.jpg" class="pic">
+    </div>
+  </section>
+  
+<!--end of fifth page-->
+
+<!--sixth page-->
+
+<!--upcoming projects-->
+
+<section>
+
+  <!--up headings-->
+
+    <h2 class="section-heading1">Upcoming <span style="color: #1e664d;">Projects..</span></h2>
+    </div>
+
+<!--box-1-->
+
+    <div class="row1">
+      <div class="column1">
+        <div class="card1">
+         
+<!--transition-->
+         
+          <div class="icon-wrapper7" >
+            
+            <i class="fas fa-hammer" ></i>
+          
+          </div>
+          
+<!--box-1 heading-->
+          <h3>Coral Rejuvenation</h3>
+          
+<!--box-1 para-->
+          <p  class="p0" style="
+          font-size: 18px;
+          line-height: 1.6;
+          letter-spacing: 0.03em;">
+            Restoring vibrant coral reefs through innovative techniques for a resilient marine ecosystem.<br>
+            <span style="color: #032413;">Read more......</span>
+          </p>
+        </div>
+      </div>
+      
+<!--box-2-->
+
+      <div class="column1">
+        <div class="card1">
+   
+<!--transition-->
+
+          <div class="icon-wrapper8">
+          
+            <i class="fas fa-brush"></i>
+          
+          </div>
+<!--box-1 heading-->
+          <h3>Urban Biodiversity Initiative</h3>
+<!--box-1 para-->
+          <p class="p0" style="
+          font-size: 18px;
+          line-height: 1.6;
+          letter-spacing: 0.03em;">
+           Enhancing green spaces in urban areas to promote biodiversity and sustainable cohabitation.
+           <br>
+            <span style="color: #032413;">Read more......</span>
+          </p>
+        </div>
+      </div>
+     
+<!--box-3-->
+     
+      <div class="column1">
+        <div class="card1">
+         
+<!--transition-->
+         
+          <div class="icon-wrapper9">
+            
+            <i class="fas fa-wrench"></i>
+          
+          </div>
+<!--box-3 heading-->
+          <h3>Eco-Tech for Elephants</h3>
+<!--box-3 para-->
+          <p class="p0" style="
+          font-size: 18px;
+          line-height: 1.6;
+          letter-spacing: 0.03em;">
+          Implementing cutting-edge technology to monitor and protect elephant populations for a thriving future.<br>
+          <span style="color: #032413;">Read more......</span>          
+        </p>
+        </div>
+      </div>
+
+<!--end of sixth page-->
+
+<!--seventh page-->
+
+ <!--contact us-->
+
+<!--contact us container-->
+
+<div class="container27" id="contact">
+  <div style="text-align:center">
+
+<!--heading-->
+    <h2 style="font-size: 70px; color: #000000;">Contact Us</h2>
+<!--para-->
+    <p style="color: #2b815d;">"Leave us a message"</p>
+  </div>
+
+<!--contact us container-->
+
+  <div class="row27">
+<!--image on the left side-->
+    <div class="column27">
+      
+      
+      <img src="https://i0.wp.com/www.cssscript.com/wp-content/uploads/2018/03/Simple-Location-Picker.png?fit=561%2C421&ssl=1" style="width:100%; height: 400px;">
+    
+    
+    </div>
+    
+    <div class="column27">
+      <form action="/action_page.php">
+
+<!--contents of contact us-->
+      
+        <label style="background-color: #b9b9b9; font-size: 15px;"  for="fname">First Name</label>
+        <input style="background-color: #ffffff27; font-size: 15px"  type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label style="background-color: #b9b9b9; font-size: 15px"  for="lname">Last Name</label>
+        <input style="background-color: #ffffff27; font-size: 15px"type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label style="background-color: #b9b9b9; font-size: 15px"  for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label style="background-color: #b9b9b9; font-size: 15px"  for="subject">Subject</label>
+        <textarea style="background-color: #ffffff27;"  id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+<!--end of seventh page-->
+
+<!--eighth page-->
+
+<!--FAQs-->
+
+      <div class="faq-section">
+<!--heading-->
+        <h2 style="font-size: 40px; margin-top: 100px;">Frequently Asked Questions</h2>
+<!--container-1-->
+        <div class="faq-item">
+<!--Q-1-->
+          <h3 class="question">What is the primary focus of Celestial Wildlife?
+          </h3>
+<!--A-1-->
+          <p class="answer">Celestial Wildlife is dedicated to wildlife conservation, aiming to raise awareness and promote initiatives that safeguard the diverse ecosystems and species inhabiting our planet.</p>
+        </div>
+<!--container-2-->
+        <div class="faq-item">
+<!--Q-2-->
+          <h3 class="question">How can I contribute to Celestial Wildlife's conservation efforts?</h3>
+<!--A-2-->
+          <p class="answer">You can contribute by staying informed, sharing our content, participating in conservation projects, and supporting affiliated initiatives. Visit our "Get Involved" section for more details.</p>
+        </div>
+<!--container-3-->
+        <div class="faq-item">
+<!--Q-3-->
+          <h3 class="question">What sets Celestial Wildlife apart in the realm of wildlife conservation?
+          </h3>
+<!--A-3-->
+          <p class="answer">Celestial Wildlife combines scientific expertise with innovative technologies to address conservation challenges. From drone-based habitat monitoring to bioacoustic research, our approach is cutting-edge and impactful..</p>
+        </div>
+<!--container-4-->
+        <div class="faq-item">
+<!--Q-4-->
+          <h3 class="question">Are there opportunities for collaboration or partnerships with Celestial Wildlife?
+          </h3>
+<!--A-4-->
+          <p class="answer">Yes, Celestial Wildlife welcomes collaborations with like-minded organizations, researchers, and individuals. Feel free to reach out through our contact section for potential partnerships.</p>
+        </div>
+<!--container-5-->
+        <div class="faq-item">
+<!--Q-5-->
+          <h3 class="question">How does Celestial Wildlife ensure transparency in its conservation projects?
+          </h3>
+<!--A-5-->
+          <p class="answer">Transparency is a core value. We provide regular updates on ongoing projects, share outcomes, and engage with our community through newsletters, social media, and detailed project reports.</p>
+        </div>
+<!--container-6-->
+        <div class="faq-item">
+<!--Q-6-->
+          <h3 class="question">What role does community engagement play in Celestial Wildlife's initiatives?
+          </h3>
+<!--A-6-->
+          <p class="answer">Community engagement is pivotal. Celestial Wildlife believes in fostering local support and empowering communities to be stewards of their environments, ensuring sustainable conservation outcomes.</p>
+        </div>
+      </div>
+
+<!--end of eighth page-->
+
+<!--footer-->
+
+<div class="footer">
+
+<!--heading-->
+
+  <div class="heading">
+        <h2>Celestial Wildlife<sup>™</sup></h2>
+      </div>
+     
+<!--container-->
+      <div class="content">
+<!--column-1-->
+        <div class="services">
+          <h4>Services</h4>
+          <p><a href="#">Wildlife Conservation Insights
+          </a></p>
+          <p><a href="#">Biodiversity Advocacy and Education
+          </a></p>
+          <p><a href="#">Technological Solutions for Habitat Monitoring
+          </a></p>
+          <p><a href="#">Endangered Species Protection Initiatives
+          </a></p>
+        </div>
+<!--column-2-->
+        <div class="social-media">
+          <h4>Social</h4>
+          <p>
+            <a href="#"
+              ><i class="fab fa-linkedin"></i> Linkedin</a
+            >
+          </p>
+          <p>
+            <a href="#"
+              ><i class="fab fa-twitter"></i> Twitter</a
+            >
+          </p>
+          <p>
+            <a href="https://github.com/farazc60"
+              ><i class="fab fa-github"></i> Github</a
+            >
+          </p>
+          <p>
+            <a href="https://www.facebook.com/codewithfaraz"
+              ><i class="fab fa-facebook"></i> Facebook</a
+            >
+          </p>
+          <p>
+            <a href="https://www.instagram.com/codewithfaraz"
+              ><i class="fab fa-instagram"></i> Instagram</a
+            >
+          </p>
+        </div>
+<!--column-3-->
+        <div class="links">
+          <h4>Quick links</h4>
+          <p><a href="#">Home</a></p>
+          <p><a href="#">About</a></p>
+          <p><a href="#">Blogs</a></p>
+          <p><a href="#">Contact</a></p>
+        </div>
+<!--container-4-->
+        <div class="details">
+          <h4 class="address">Address</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur <br />
+            adipisicing elit. Cupiditate, qui!
+          </p>
+          <h4 class="mobile">Mobile</h4>
+          <p><a href="#">+91-12225*****</a></p>
+          <h4 class="mail">Email</h4>
+          <p><a href="#">2201031830002@silveroakuni.ac.in</a></p>
+        </div>
+      </div>
+      <footer>
+        <hr />
+
+<!--copyright statement-->
+
+        © 2024 [Celestial Wildlife]. All rights reserved. 
+
+      </footer>
+    </div>
+  </body>
+</html>
