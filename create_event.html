@@ -1,12 +1,11 @@
-<!-- create_event.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Management</title>
+    <title>Learn</title>
     <style>
-        body {
+         body {
       font-family: Arial, sans-serif;
       background:url('https://files.worldwildlife.org/wwfcmsprod/images/Sampling_Saola_Viet_Nam/featured_story/556ctijg3r__WW1304335.jpg');
       margin: 0;
@@ -92,8 +91,8 @@
     </style>
 </head>
 <body>
- <nav>
-        <div>
+<nav>
+     <div>
             <!-- Home Link -->
             <a href="index.html">Home</a>
             
@@ -103,68 +102,107 @@
             <!-- Contacts Link -->
             <a href="contact.html">Contact Us</a>
         </div>
+</nav>
 
-        <!-- Login Button -->
-        <a href="login2.html" style="background-color: #e74c3c; padding: 10px 20px; border-radius: 5px; color: #fff; text-decoration: none; font-weight: bold;">Login</a>
-    </nav>
-
-    <div style="margin-top:2px">
-  <h1 style="font-size:50px;color:black">Upload Image</h1>
-  </div>
-  <div style="width:60%;margin:auto">
-  <form id="createEventForm">
-    <label for="eventName">Name:</label>
-    <input type="text" id="eventName" name="eventName" required>
-    <label for="eventDate">Date:</label>
-    <input type="date" id="eventDate" name="eventDate" required>
-
-    <label for="eventTime">Time:</label>
-    <input type="time" id="eventTime" name="eventTime" required>
-
-    <div style="margin:auto;width:200px">
-    <button type="button" onclick="submitEvent()">Submit</button>
-    </div>
-  </form>
-  </div>
-    </form>
-  <div id="popup">
-  <img src="tick.png" style="width:50px;margin-top:-40px">
-  <h2>Thank You!</h2>
-  <p STYLE="font-weight:900;text-align:center">Your Event has been Created.</p>
-  <p id="randomNumber" style="font-size:20px;color:#A9A9A9;text-align:center;padding-top:5px"></p>
-  <button onclick="hidePopup()" style="margin:0px 30%;background:#6fd649;width:40%">Close</button>
+<div style="margin-top:2px">
+    <h1 style="font-size:50px;color:black">Upload Image</h1>
 </div>
-    <script>
-        function submitEvent() {
-            var eventName = document.getElementById("eventName").value;
-            var eventDate = document.getElementById("eventDate").value;
-            var eventTime = document.getElementById("eventTime").value;
-            document.getElementById('popup').style.display = 'block';
 
-            // Create a new event object
+<div style="width:60%;margin:auto">
+    <form id="createEventForm">
+        <label for="eventName">Name:</label>
+        <input type="text" id="eventName" name="eventName" required>
+
+        <label for="eventDate">Date:</label>
+        <input type="date" id="eventDate" name="eventDate" required>
+
+        <label for="eventTime">Time:</label>
+        <input type="time" id="eventTime" name="eventTime" required>
+
+        <label for="eventImage">Image:</label>
+        <input type="file" id="eventImage" name="eventImage" accept="image/*">
+
+        <div style="margin:auto;width:200px">
+            <button type="button" onclick="submitEvent()">Submit</button>
+        </div>
+    </form>
+</div>
+
+<div id="popup">
+    <!-- Popup content as you provided -->
+</div>
+
+<div id="eventsDisplay" style="margin-top: 20px;">
+    <!-- Section where events will be displayed -->
+</div>
+
+<script>
+    function submitEvent() {
+        var eventName = document.getElementById("eventName").value;
+        var eventDate = document.getElementById("eventDate").value;
+        var eventTime = document.getElementById("eventTime").value;
+        var eventImageFile = document.getElementById("eventImage").files[0];
+        var reader = new FileReader();
+        
+        reader.onload = function(e) {
+            var base64Image = e.target.result;
             var event = {
                 name: eventName,
                 date: eventDate,
                 time: eventTime,
+                image: base64Image
             };
 
-            // Save the event to local storage
             saveEvent(event);
+            document.getElementById('popup').style.display = 'block';
+            displayEvents(); // Update the display after adding a new event
+        };
+        
+        if (eventImageFile) {
+            reader.readAsDataURL(eventImageFile);
+        } else {
+            var event = {
+                name: eventName,
+                date: eventDate,
+                time: eventTime
+            };
+            saveEvent(event);
+            document.getElementById('popup').style.display = 'block';
+            displayEvents(); // Update the display after adding a new event
         }
-         function hidePopup() {
-             document.getElementById('popup').style.display='none';
-}
+    }
 
-        function saveEvent(event) {
-            // Retrieve existing events from local storage
-            var events = JSON.parse(localStorage.getItem('events')) || [];
+    function saveEvent(event) {
+        var events = JSON.parse(localStorage.getItem('events')) || [];
+        events.push(event);
+        localStorage.setItem('events', JSON.stringify(events));
+    }
 
-            // Add the new event
-            events.push(event);
+    function hidePopup() {
+        document.getElementById('popup').style.display='none';
+    }
 
-            // Save the updated events back to local storage
-            localStorage.setItem('events', JSON.stringify(events));
-        }
-    </script>
+    function displayEvents() {
+        var events = JSON.parse(localStorage.getItem('events')) || [];
+        var eventsContainer = document.getElementById('eventsDisplay');
+        eventsContainer.innerHTML = ''; // Clear existing content
+
+        events.forEach(function(event) {
+            var eventDiv = document.createElement('div');
+            eventDiv.innerHTML = `
+                <h3>${event.name}</h3>
+                <p>Date: ${event.date}</p>
+                <p>Time: ${event.time}</p>
+                ${event.image ? '<img src="' + event.image + '" style="width: 200px; height: auto;">' : ''}
+            `;
+            eventsContainer.appendChild(eventDiv);
+        });
+    }
+
+    // Call displayEvents when the page loads to show existing events
+    window.onload = function() {
+        displayEvents();
+    };
+</script>
 </body>
 </html>
