@@ -116,5 +116,43 @@
     </form>
 
     <a href="create.html" class="view-events">View Submitted Events</a>
+     <script>
+        function submitEvent() {
+            var eventName = document.getElementById("eventName").value;
+            var eventDate = document.getElementById("eventDate").value;
+            var eventTime = document.getElementById("eventTime").value;
+            var eventImageFile = document.getElementById("eventImage").files[0];
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+                var base64Image = e.target.result;
+                var event = {
+                    name: eventName,
+                    date: eventDate,
+                    time: eventTime,
+                    image: base64Image
+                };
+
+                saveEvent(event);
+            };
+
+            if (eventImageFile) {
+                reader.readAsDataURL(eventImageFile);
+            } else {
+                var event = {
+                    name: eventName,
+                    date: eventDate,
+                    time: eventTime
+                };
+                saveEvent(event);
+            }
+        }
+
+        function saveEvent(event) {
+            var events = JSON.parse(localStorage.getItem('events')) || [];
+            events.push(event);
+            localStorage.setItem('events', JSON.stringify(events));
+        }
+    </script>
 </body>
 </html>
