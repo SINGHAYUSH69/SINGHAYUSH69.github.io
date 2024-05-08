@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Events</title>
+    <title>View Submitted Events</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
         }
         .event {
             margin: 20px;
@@ -18,17 +20,32 @@
             max-width: 100%;
             height: auto;
         }
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <h1>Stored Events</h1>
     <div id="eventsDisplay"></div>
+    <button onclick="clearEvents()">Clear All Events</button>
 
     <script>
         function displayEvents() {
             var events = JSON.parse(localStorage.getItem('events')) || [];
             var eventsContainer = document.getElementById('eventsDisplay');
             eventsContainer.innerHTML = ''; // Clear existing content
+
+            if (events.length === 0) {
+                eventsContainer.innerHTML = '<p>No events stored.</p>';
+                return;
+            }
 
             events.forEach(function(event) {
                 var eventDiv = document.createElement('div');
@@ -37,10 +54,15 @@
                     <h3>${event.name}</h3>
                     <p>Date: ${event.date}</p>
                     <p>Time: ${event.time}</p>
-                    ${event.image ? '<img src="' + event.image + '" alt="Event Image">' : '<p>No image provided</p>'}
+                    ${event.image ? '<img src="' + event.image + '" alt="Event Image">' : '<p>No image provided.</p>'}
                 `;
                 eventsContainer.appendChild(eventDiv);
             });
+        }
+
+        function clearEvents() {
+            localStorage.removeItem('events'); // Clear the events from local storage
+            displayEvents(); // Update the display
         }
 
         // Call displayEvents when the page loads to show existing events
